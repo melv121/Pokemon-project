@@ -1,0 +1,7 @@
+<svg width="192" height="192" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" fill="#EE1515"/>
+  <circle cx="96" cy="96" r="60" fill="white"/>
+  <circle cx="96" cy="96" r="50" fill="#EE1515"/>
+  <rect x="86" y="46" width="20" height="100" fill="white"/>
+  <text x="96" y="170" font-size="24" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">PokéCatch</text>
+</svg>

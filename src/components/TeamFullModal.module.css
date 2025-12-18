@@ -1,0 +1,141 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modalContent {
+  background: var(--pokecatch-color-card-bg);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--pokecatch-color-text);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+.closeBtn:hover {
+  background: var(--pokecatch-color-hover);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: var(--pokecatch-color-text);
+  text-align: center;
+}
+
+.message {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: var(--pokecatch-color-text-secondary);
+  line-height: 1.6;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.pokemonItem {
+  background: var(--pokecatch-color-item-bg);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  position: relative;
+  border: 2px solid var(--pokecatch-color-item-border);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pokemonItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-color: var(--pokecatch-color-danger);
+}
+
+.sprite {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  image-rendering: pixelated;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+  text-transform: capitalize;
+  color: var(--pokecatch-color-text);
+}
+
+.favorite {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 16px;
+}
+
+.shinyBadge {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancelBtn {
+  background: var(--pokecatch-color-secondary);
+  color: var(--pokecatch-color-text);
+}
+
+.cancelBtn:hover {
+  background: var(--pokecatch-color-hover);
+}

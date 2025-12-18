@@ -1,0 +1,138 @@
+.teamContainer {
+  background: var(--pokecatch-color-card-bg);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 3px solid var(--pokecatch-color-border);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--pokecatch-color-text);
+  text-align: center;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--pokecatch-color-text-secondary);
+  font-size: 16px;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.pokemonItem {
+  background: var(--pokecatch-color-item-bg);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+  border: 2px solid var(--pokecatch-color-item-border);
+  transition: transform 0.2s ease;
+}
+
+.pokemonItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.favoriteBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.favoriteBtn:hover {
+  transform: scale(1.2);
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--pokecatch-color-danger);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}
+
+.sprite {
+  width: 96px;
+  height: 96px;
+  margin: 8px auto;
+  image-rendering: pixelated;
+}
+
+.shinyBadge {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 8px;
+  text-transform: capitalize;
+  color: var(--pokecatch-color-text);
+}
+
+.types {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.type {
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.count {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--pokecatch-color-text-secondary);
+  font-weight: 600;
+}
+
+.full {
+  color: var(--pokecatch-color-danger);
+}

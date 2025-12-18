@@ -1,0 +1,102 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Pokemon-themed colors - Light mode */
+  --pokecatch-color-primary: #EE1515;
+  --pokecatch-color-primary-dark: #CC0000;
+  --pokecatch-color-secondary: #3B4CCA;
+  --pokecatch-color-success: #22C55E;
+  --pokecatch-color-danger: #EF4444;
+  --pokecatch-color-warning: #F59E0B;
+  
+  --pokecatch-color-bg: #F5F5F5;
+  --pokecatch-color-text: #1A1A1A;
+  --pokecatch-color-text-secondary: #666666;
+  
+  --pokecatch-color-card-bg: #FFFFFF;
+  --pokecatch-color-border: #DDDDDD;
+  --pokecatch-color-item-bg: #F9F9F9;
+  --pokecatch-color-item-border: #E5E5E5;
+  
+  --pokecatch-color-header-bg: #FFFFFF;
+  --pokecatch-color-button-bg: #F0F0F0;
+  --pokecatch-color-hover: #E8E8E8;
+  --pokecatch-color-message-bg: #FFF9E6;
+  
+  --pokecatch-color-catch: #EE1515;
+  --pokecatch-color-flee: #666666;
+  
+  --pokecatch-color-scroll-track: #F0F0F0;
+  --pokecatch-color-scroll-thumb: #CCCCCC;
+  --pokecatch-color-scroll-thumb-hover: #999999;
+  
+  /* Pokemon Type Colors */
+  --pokecatch-color-normal: #A8A878;
+  --pokecatch-color-fire: #F08030;
+  --pokecatch-color-water: #6890F0;
+  --pokecatch-color-electric: #F8D030;
+  --pokecatch-color-grass: #78C850;
+  --pokecatch-color-ice: #98D8D8;
+  --pokecatch-color-fighting: #C03028;
+  --pokecatch-color-poison: #A040A0;
+  --pokecatch-color-ground: #E0C068;
+  --pokecatch-color-flying: #A890F0;
+  --pokecatch-color-psychic: #F85888;
+  --pokecatch-color-bug: #A8B820;
+  --pokecatch-color-rock: #B8A038;
+  --pokecatch-color-ghost: #705898;
+  --pokecatch-color-dragon: #7038F8;
+  --pokecatch-color-dark: #705848;
+  --pokecatch-color-steel: #B8B8D0;
+  --pokecatch-color-fairy: #EE99AC;
+}
+
+[data-theme="dark"] {
+  --pokecatch-color-bg: #1A1A1A;
+  --pokecatch-color-text: #F5F5F5;
+  --pokecatch-color-text-secondary: #B0B0B0;
+  
+  --pokecatch-color-card-bg: #2A2A2A;
+  --pokecatch-color-border: #404040;
+  --pokecatch-color-item-bg: #333333;
+  --pokecatch-color-item-border: #444444;
+  
+  --pokecatch-color-header-bg: #2A2A2A;
+  --pokecatch-color-button-bg: #333333;
+  --pokecatch-color-hover: #404040;
+  --pokecatch-color-message-bg: #3A3520;
+  
+  --pokecatch-color-scroll-track: #2A2A2A;
+  --pokecatch-color-scroll-thumb: #555555;
+  --pokecatch-color-scroll-thumb-hover: #777777;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--pokecatch-color-bg);
+  color: var(--pokecatch-color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+  font-family: inherit;
+}
+
+#root {
+  width: 100%;
+}
